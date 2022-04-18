@@ -1,0 +1,24 @@
+name: ${project.artifactId}
+version: '${project.version}'
+main: ${project.groupId}.${project.artifactId}.Main
+api-version: '1.18'
+authors: [dalbitresb12]
+description: Survive and gather resources, all in the confinement of just one chunk. Think you can do it? Inspired by Call Me Kevin on YouTube.
+website: https://github.com/dalbitresb12/OneChunkWorld
+commands:
+  getmonitoringstatus:
+    description: Prints information of the plugin status
+    usage: /<command>
+    permission: onechunkworld.getmonitoringstatus
+  setchunk:
+    description: Sets the selected chunk according to the parameters received
+    usage: /<command> (<player>|<level_name>) [<chunk_x>] [<chunk_z>] [<height>]
+    permission: onechunkworld.setchunk
+  togglechunk:
+    description: Toggles the player detection of their location to prevent them from leaving the chunk
+    usage: /<command>
+    permission: onechunkworld.togglechunk
+  togglesound:
+    description: Toggles the sound effect played when a player leaves the selected chunk
+    usage: /<command>
+    permission: onechunkworld.togglesound
